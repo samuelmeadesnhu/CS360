@@ -1,1 +1,38 @@
+Briefly summarize the requirements and goals of the app you developed. What user needs was this app designed to address?
 
+The CS360 Weight Tracking app was required to have functioning user authentication, request permissions and send SMS notifications, and display a CRUD table
+for users to interact with. The app is intended to be a means of tracking and monitoring weight over a period of time, to observe trends and progressively
+work towards a goal.
+
+What screens and features were necessary to support user needs and produce a user-centered UI for the app? How did your UI designs keep users in mind?
+Why were your designs successful?
+
+The application needed a few activities: authentication activity, registration activity, dashboard activity, and a row activity. This allows for the 
+registration of new users, the authentiation of users to see and store their unique information, and a dedicated view to add and update table items as
+needed. This allows for customization of the data to monitor the time spans/info that's important to the user. The UI is overall fairly simple, focussing a
+left-to-right design for intuitive navigation.
+
+How did you approach the process of coding your app? What techniques or strategies did you use? How could those be applied in the future?
+
+I approached the development process itteratively. Before spending too much time on the Java and SQL databases, I fleshed out all of the XML for the
+activities. This is a good way to remain user focussed, because having a finished/mocked UI is a great opportunity to gauge user needs and if the 
+application is matching their vision. Once the UI was finished, I went back and implemented the logic to make the application functional. I finished one
+activity at a time, starting with authentication. 
+
+How did you test to ensure your code was functional? Why is this process important and what did it reveal?
+
+I thoroughly tested activities like authentication to make sure it was behaving as intended. I wanted to make sure there were no edge cases that locked
+a user out from registration or allowed them to sign in without registering. I tried a series of user/password combinations, tried registering before 
+attempting to sign in, after failing, ensured multiple registrations could be active at once, and that those registered credentials would remain in 
+the DB after killing the app. The testing helped me fine tune the auth process, setting up specified input types for both username and password fields. 
+
+Considering the full app design and development process, from initial planning to finalization, where did you have to innovate to overcome a challenge?
+
+A challenge I had to overcome was presenting information in an intuitive way for a user to navigate and enjoy. Most of my development if back-end 
+focussed, so UI/UX concepts were new to me. It took a lot of research and trial and error, but eventually I was able to create a cohesive app. 
+
+In what specific component from your mobile app were you particularly successful in demonstrating your knowledge, skills, and experience?
+
+I think the registration/auth activities were particularly successful. They interact with the SQL database, and are visually pleasing. I was able to 
+incorporate some design pieces by adding icons in the text fields to help prompt the user for their username and password. I felt this help tie the text
+views into the application more cohesively. 
